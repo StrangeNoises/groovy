@@ -224,7 +224,7 @@ final class SyntaxErrorTest extends GroovyTestCase {
     }
 
     void 'test groovy core - AnnotationDeclaration 1'() {
-        TestUtils.doRunAndShouldFail('fail/AnnotationDeclaration_01x.groovy');
+        TestUtils.doRunAndShouldFail('fail/AnnotationDeclaration_01x.groovy')
     }
 
     void 'test groovy core - AnnotationDeclaration 2'() {
@@ -401,6 +401,13 @@ final class SyntaxErrorTest extends GroovyTestCase {
     void 'test groovy core - Array'() {
         TestUtils.doRunAndShouldFail('fail/Array_01x.groovy')
         TestUtils.doRunAndShouldFail('fail/Array_02x.groovy')
+    }
+
+    void "test groovy core - SwitchExpression"() {
+        TestUtils.doRunAndShouldFail('fail/SwitchExpression_01x.groovy')
+        TestUtils.doRunAndShouldFail('fail/SwitchExpression_02x.groovy')
+        TestUtils.doRunAndShouldFail('fail/SwitchExpression_03x.groovy')
+        TestUtils.doRunAndShouldFail('fail/SwitchExpression_04x.groovy')
     }
 
     @NotYetImplemented
